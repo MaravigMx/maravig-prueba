@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maravig · Prueba</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #5c5c5c;
+      --line: #e6e6e6;
+      --whatsapp: #128c7e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f6f4f1;
+      color: var(--ink);
+    }
+    header {
+      padding: 28px 20px 8px;
+      text-align: center;
+    }
+    header p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 16px 20px 48px;
+      display: grid;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    }
+    .photo {
+      height: 180px;
+      background: linear-gradient(135deg, #cfc6b8, #8f8578);
+    }
+    .body { padding: 18px 20px 20px; }
+    .colonia {
+      font-family: system-ui, sans-serif;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+    h2 { margin: 0 0 10px; font-size: 22px; font-weight: 500; }
+    .meta {
+      display: flex;
+      gap: 14px;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 14px;
+    }
+    .precio {
+      font-size: 26px;
+      margin: 0 0 16px;
+    }
+    .wa {
+      display: inline-block;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      background: var(--whatsapp);
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 999px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maravig</h1>
+    <p>Primer ejercicio · GitHub + Cursor</p>
+  </header>
+  <main>
+    <article class="card">
+      <div class="photo" aria-hidden="true"></div>
+      <div class="body">
+        <p class="colonia">Coyoacán · CDMX</p>
+        <h2>Departamento 2 recámaras</h2>
+        <p class="meta"><span>2 rec</span><span>1 baño</span><span>75 m²</span></p>
+        <p class="precio">$3,450,000 MXN</p>
+        <a class="wa" href="https://wa.me/52TU_NUMERO" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
